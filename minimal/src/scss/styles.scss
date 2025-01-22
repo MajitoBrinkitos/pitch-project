@@ -1,0 +1,165 @@
+//import variables.scss
+@use 'variables.scss';
+@use 'queries.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    padding: auto;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Arvo', serif;
+}
+
+//Navigation Menu
+nav {
+    background-color: var(--nav-bkg);
+    color: var(--nav-color);
+    font-family: "Rowdies", serif;
+
+    .container-fluid {
+        .navbar-brand {
+            font-size: 2.5rem;
+        }
+
+        .navbar-collapse {
+            ul {
+                list-style-type: none;
+                margin-left: 10px;
+                padding: 0;
+                display: flex;
+                justify-content: space-around;
+                li {
+                    font-size: 28px;
+                    .nav-link {
+                        color: var(--nav-color);
+                        text-decoration: none;
+                        &:hover {
+                            color: grey;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//logo
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--logo-bkgr);
+    padding: 0px;
+
+    img {
+        width: 100%;
+        max-width: 25%;
+        height: auto;
+    }
+}
+
+//Header
+header {
+    background-color: var(--header-bkg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .container {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 64px;
+        gap: 80px;
+    
+        .row-header {
+            display: flex;
+            .col {
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                align-items: center;
+                flex-wrap: wrap;
+                h1 {
+                    font-family: 'Arvo', serif;
+                    font-weight: 700;
+                    font-size: 4.5rem;
+                    line-height: 57.6px;
+                    color: var(--h1-color);
+                }
+                ul {
+                    list-style-type: none;
+                    li {
+                        font-family: 'Arvo', serif;
+                        font-weight: 400;
+                        font-size: 30px;
+                        line-height: 27px;
+                        color: var(--li-color);
+                        padding: 10px;
+                    }
+                }
+            }
+            .col-img {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                img {
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+            .welcomeBtn {
+                display: flex;
+                justify-content: center;
+                
+                button {
+                    background-color: var(--btn-bkg);
+                    color: var(--btn-color);
+                    padding: 5px;
+                    font-size: 2.5rem;
+                    font-family: 'Arvo', serif;
+                    border-radius: 10px;
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+
+}
+
+//Features Section
+    .container .features {
+        display: flex;
+        padding: 3rem 1.5rem 3rem 1.5rem;
+        h2 {
+            .border-bottom {
+                padding-bottom: .5rem;
+                border: 1px solid #E68369;
+            }
+        }
+    }
+
+//Gradients
+//gradient background for Logo
+.gradient-bkgr {
+    background: linear-gradient(190deg, #E68369, #ECCEAE, #131842);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }

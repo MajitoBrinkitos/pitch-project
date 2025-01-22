@@ -1,0 +1,47 @@
+---
+
+---
+<nav class="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Home</a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarMenu">
+        <ul class="ul-list">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/aboutus">AboutUs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/media">Media</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/stories">Stories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <script>
+     import { gsap } from "gsap";
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    //Navigation menu: ul > li > a
+document.addEventListener('DOMContentLoaded', (event) => { 
+    const navbarMenu = document.getElementById('navbarMenu'); 
+    navbarMenu.addEventListener('show.bs.collapse', () => { 
+        gsap.from('.ul-list li', { 
+            duration: 2, 
+            opacity: 0, 
+            y: 50, 
+            stagger: 0.25 
+        }); 
+    }); 
+});
+  </script>

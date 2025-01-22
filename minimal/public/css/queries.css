@@ -1,0 +1,65 @@
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  nav .container-fluid .navbar-brand {
+    font-size: 1.5rem;
+  }
+  nav .container-fluid .navbar-collapse ul .nav-item {
+    font-size: 18px;
+  }
+  ul {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  li {
+    font-size: 1rem;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header .container .row-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  header .container .row-header .col h1.gsapH1 {
+    font-size: 2.5rem;
+  }
+  header .container .row-header .col ul li.gsapH1Li {
+    font-size: 1rem;
+  }
+  header .container .row-header .col ul li.gsapH1Lii {
+    font-size: 1rem;
+  }
+  header .container .row-header .col-img {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  header .container .row-header .welcomeBtn .row-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header .container .row-header .welcomeBtn .row-btn .col {
+    width: 100%;
+    text-align: center;
+  }
+  header .container .row-header .welcomeBtn .row-btn .col button {
+    background-color: var(--btn-bkg);
+    color: var(--btn-color);
+    padding: 5px;
+    font-size: 1rem;
+    font-family: "Arvo", serif;
+    border-radius: 10px;
+    margin-left: 1rem;
+  }
+}
+
+/*# sourceMappingURL=queries.css.map */

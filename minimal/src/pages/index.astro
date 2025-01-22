@@ -1,0 +1,37 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Logo from '../components/Logo.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import DarkLightMode from '../components/DarkLightMode.astro';
+---
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT MANAGEMENT - MARIA JOSE MEJIA 2024-12-13</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <DarkLightMode />
+    <Navbar />
+    <Logo />
+    <Header />
+    <hr>
+    <div class="container features">
+        <h2 class="border-bottom">Features</h2>
+    </div>
+    <hr>
+    <div class="stories">
+        <!-- Stories content here -->
+    </div>
+    <hr>
+    <Footer />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/app.js" is:inline></script> <!-- Add 'is:inline' here -->
+</body>
+</html>

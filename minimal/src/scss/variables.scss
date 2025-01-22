@@ -1,0 +1,46 @@
+//DARK-LIGHT MODE
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Baskervville:ital@0;1&family=Playwrite+HR+Lijeva:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Baskervville:ital@0;1&family=Playwrite+HR+Lijeva:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap');
+
+//light
+:root {
+    //body
+    --background-color: white;
+    --text-color: black;
+
+    //nav
+    --nav-bkg: #f3e8d6;
+    --nav-color: #1a1a24;
+    
+    //header
+    --h1-color: black;
+    --li-color: black;
+    --header-bkg: #f3e8d6;
+
+    //header-btns
+    --btn-bkg: #1a1a24;
+    --btn-color: #f3e8d4;
+
+    //fatures
+    --ft-bkg: #f3e8d4;
+}
+
+//dark
+[data-bs-theme="dark"] {
+    //body
+    --background-color: #1a1a24;
+    --text-color: white;
+
+    //nav
+    --nav-bkg: #1a1a24;
+    --nav-color: #E68369;
+
+    //header
+    --h1-color: #E68369;
+    --li-color: #E68369;
+    --header-bkg: #1a1a24;
+
+    //header-btns
+    --btn-bkg: #f3e8d4;
+    --btn-color: #1a1a24;
+}

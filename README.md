@@ -1,4 +1,4 @@
-# Project Name: Collab Dating Apps
+# Project Name: Collab Dating App
 ### Description: 
 There are many dating apps in the market nowadays, and every single one of them targets the audience in a different way by the way they approach possible users.
 After doing some research and even interviewing people from different ages and interests, I came to the conclusion that the Dating App World still can be improved. Therefore, I consider this is a good idea for my Project.
@@ -34,6 +34,27 @@ The website offers the option of changing between a dark and light mode, based o
     - The subheadings have a background blur effect while the website is loaded. 
 3. iOS and Android buttons
 These buttons are located in the Hero Header section, and contain a link that simulates the downloading of the iOS and Android mobile version of "Collab".
+
+## Project Structure Astro
+/src
+  /components
+    DarkLightMode.astro
+    Navbar.astro
+    Header.astro
+    Footer.astro
+  /pages
+    index.astro
+  /styles
+    styles.scss
+/public
+  /css
+    styles.css
+  /images
+    logo.png
+    welcome-img.jpg
+  /js
+    app.js
+
 
 ## Installation
 1. Clone this repository

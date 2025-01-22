@@ -1,0 +1,82 @@
+//Responsiveness
+//nav
+@media (max-width: 768px) {
+    //Navigation Menu 
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .container-fluid {
+            .navbar-brand {
+                font-size: 1.5rem;
+            }
+            .navbar-collapse {
+                ul {
+                    .nav-item{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    } 
+    ul { 
+        justify-content: center; 
+        gap: 0.5rem; 
+    } 
+    li { 
+        font-size: 1rem; 
+    }
+
+    //Header
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .container {
+            .row-header {
+                flex-direction: column;
+                align-items: center;
+                .col {
+                    h1.gsapH1 {
+                        font-size: 2.5rem;
+                    }
+                    ul {
+                        li.gsapH1Li {
+                            font-size: 1rem;
+                        }
+                        li.gsapH1Lii {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                .col-img {
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                    margin-top: 20px;
+                    margin-bottom: 0;
+                }
+
+                .welcomeBtn .row-btn {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .col {
+                        width: 100%;
+                        text-align: center;
+                        button {
+                            background-color: var(--btn-bkg);
+                            color: var(--btn-color);
+                            padding: 5px;
+                            font-size: 1rem;
+                            font-family: 'Arvo', serif;
+                            border-radius: 10px;
+                            margin-left: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
